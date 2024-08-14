@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: #728096;" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stoktakip.UrunSorgulaController">
+   <children>
+      <TableView fx:id="myTableView" prefHeight="130.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="20.0" text="İD" />
+            <TableColumn fx:id="urunadColumn" prefWidth="220.0" text="ÜRÜN ADI" />
+            <TableColumn fx:id="alisfiyatColumn" prefWidth="120.0" text="ALIŞ FİYATI" />
+            <TableColumn fx:id="satisfiyatColumn" prefWidth="120.0" text="SATIŞ FİYATI" />
+            <TableColumn fx:id="stokColumn" prefWidth="120.0" text="STOK ADEDİ" />
+        </columns>
+      </TableView>
+      <TextField fx:id="sorguField" layoutX="106.0" layoutY="200.0" prefHeight="26.0" prefWidth="387.0" />
+      <Text layoutX="145.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LÜTFEN SORGULAMAK İSTEDİĞİNİZ ÜRÜN ADINI GİRİNİZ" />
+      <Button fx:id="sorgulaButonu" layoutX="227.0" layoutY="257.0" mnemonicParsing="false" onAction="#urunSorgulaFonksiyonu" prefHeight="26.0" prefWidth="145.0" text="Sorgula" />
+      <Button fx:id="geriButonu2" layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#justComeHome" prefHeight="30.0" prefWidth="126.0" text="Geri" />
+      <Text fx:id="errText" fill="RED" layoutX="216.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+   </children>
+</AnchorPane>

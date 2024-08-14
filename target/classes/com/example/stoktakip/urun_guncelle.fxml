@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #728096;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stoktakip.UrunGuncelleController">
+    <children>
+        <TableView fx:id="myTableView" layoutX="5.0" layoutY="6.0" prefHeight="283.0" prefWidth="786.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="40.0" text="İD" />
+                <TableColumn fx:id="urunadColumn" prefWidth="200.0" text="ÜRÜN ADI" />
+                <TableColumn fx:id="alisfiyatColumn" prefWidth="120.0" text="ALIŞ FİYATI" />
+                <TableColumn fx:id="satisfiyatColumn" prefWidth="120.0" text="SATIŞ FİYATI" />
+                <TableColumn fx:id="stokColumn" prefWidth="120.0" text="STOK ADEDİ" />
+            </columns>
+        </TableView>
+        <Button fx:id="listeleButtonu" layoutX="14.0" layoutY="300.0" mnemonicParsing="false" onAction="#listButton" prefHeight="26.0" prefWidth="192.0" text="Yenile" />
+        <Button fx:id="guncelleButtonu" layoutX="256.0" layoutY="623.0" mnemonicParsing="false" onAction="#urunGuncellemeFonksiyonu" prefHeight="26.0" prefWidth="192.0" text="Güncelle" />
+        <TextField fx:id="adGuncelleField" layoutX="215.0" layoutY="387.0" prefHeight="26.0" prefWidth="274.0" />
+        <TextField fx:id="alisfiyatGuncelleField" layoutX="215.0" layoutY="451.0" prefHeight="26.0" prefWidth="274.0" />
+        <Text layoutX="146.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÜRÜN ADI" />
+        <Text layoutX="138.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOK ADEDİ" />
+        <Label layoutX="241.0" layoutY="679.0" text="RED" textFill="RED">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="281.0" layoutY="679.0" text="MUUD SOFTWARE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="satisfiyatGuncelleField" layoutX="215.0" layoutY="513.0" prefHeight="26.0" prefWidth="274.0" />
+        <TextField fx:id="stokGuncelleField" layoutX="215.0" layoutY="568.0" prefHeight="26.0" prefWidth="274.0" />
+        <Text layoutX="141.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALIŞ FİYATI" />
+        <Text layoutX="137.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SATIŞ FİYATI" />
+        <Button fx:id="geriButonu2" layoutX="32.0" layoutY="740.0" mnemonicParsing="false" onAction="#justComeHome" prefHeight="30.0" prefWidth="126.0" text="Geri" />
+        <Text fx:id="durumYazi" fill="#e30000" layoutX="190.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[ GÜNCELLEMEK İSTEDİĞİNİZ ÜRÜNÜN BİLGİLERİNİ GİRİNİZ ]" />
+    </children>
+</AnchorPane>

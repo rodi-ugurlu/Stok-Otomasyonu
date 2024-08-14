@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="552.0" prefWidth="653.0" style="-fx-background-color: #728096;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stoktakip.UrunEkleController">
+   <children>
+      <TextField fx:id="urunAdField" layoutX="174.0" layoutY="154.0" prefHeight="26.0" prefWidth="274.0" />
+      <TextField fx:id="alisfiyatField" layoutX="174.0" layoutY="218.0" prefHeight="26.0" prefWidth="274.0" />
+      <Text fill="#ddff00" layoutX="189.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[ÜRÜN İD'Sİ OTOMATİK TANIMLANMAKTADIR]" />
+      <Text layoutX="105.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÜRÜN ADI" />
+      <Text layoutX="100.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOK ADEDİ" />
+      <Button fx:id="urunEkleButonu" layoutX="495.0" layoutY="411.0" mnemonicParsing="false" onAction="#urunEkleFonksiyonu" prefHeight="26.0" prefWidth="125.0" text="EKLE" />
+      <Label layoutX="200.0" layoutY="506.0" text="RED" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="506.0" text="MUUD SOFTWARE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="satisfiyatField" layoutX="174.0" layoutY="280.0" prefHeight="26.0" prefWidth="274.0" />
+      <TextField fx:id="stokField" layoutX="174.0" layoutY="335.0" prefHeight="26.0" prefWidth="274.0" />
+      <Text layoutX="90.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALIŞ FİYATI(₺)" />
+      <Text layoutX="86.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SATIŞ FİYATI(₺)" />
+      <Button fx:id="geriButonu2" layoutX="69.0" layoutY="409.0" mnemonicParsing="false" onAction="#justComeHome" prefHeight="30.0" prefWidth="126.0" text="Geri" />
+      <Text fx:id="situationText" fill="#04ff00" layoutX="218.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+   </children>
+</AnchorPane>
